@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
 
-        <div className="navbar ">
+        <div className="navbar my-4">
 
             <div className="navbar-start">
 
@@ -26,7 +26,7 @@ const NavBar = () => {
                     </ul>
                 </div>
 
-                <Link className="text-3xl md:text-4xl text-[#131313] font-bold"
+                <Link className="text-2xl md:text-4xl text-[#131313] font-bold"
                     to="/">Book <span className="text-[#23BE0A]">Vibe</span>
                 </Link>
 
