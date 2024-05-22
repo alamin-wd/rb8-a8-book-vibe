@@ -3,7 +3,7 @@
         "bookId": 1,
         "book_name": "The Silent Patient",
         "author": "Alex Michaelides",
-        "image": "the_silent_patient.jpg",
+        "image": "https://i.ibb.co/3FWCc4Z/The-Silent-Patient.jpg",
         "review": "The Silent Patient is a gripping psychological thriller that keeps readers on the edge of their seats until the very end. When Alicia Berenson, a talented painter, is accused of murdering her husband and then suddenly stops speaking, psychotherapist Theo Faber becomes obsessed with uncovering the truth behind her silence. As Theo delves deeper into Alicia's past, he unravels a web of secrets and deception that lead to a shocking conclusion. With its unpredictable twists and complex characters, The Silent Patient is a must-read for fans of the genre.",
         "totalPages": 336,
         "rating": 4.2,
@@ -13,13 +13,13 @@
             "Mystery"
         ],
         "publisher": "Celadon Books",
-        "yearOfPublishing": 2019
+        "year_of_publishing": 2019
     },
     {
         "bookId": 2,
         "book_name": "Educated",
         "author": "Tara Westover",
-        "image": "educated.jpg",
+        "image": "https://i.ibb.co/kJRtFF1/Educated.jpg",
         "review": "Educated is a powerful memoir that chronicles Tara Westover's journey from growing up in a survivalist family in rural Idaho to eventually earning a PhD from Cambridge University. Despite facing immense obstacles, including abuse and isolation, Tara's thirst for knowledge and determination to forge her own path propel her towards academic success. Through her eloquent prose, Westover offers a poignant reflection on the importance of education, resilience, and the pursuit of one's dreams. Educated is a captivating and inspiring memoir that leaves a lasting impression on its readers.",
         "totalPages": 352,
         "rating": 4.6,
@@ -29,13 +29,13 @@
             "Inspiring"
         ],
         "publisher": "Random House",
-        "yearOfPublishing": 2018
+        "year_of_publishing": 2018
     },
     {
         "bookId": 3,
         "book_name": "Where the Crawdads Sing",
         "author": "Delia Owens",
-        "image": "where_the_crawdads_sing.jpg",
+        "image": "https://i.ibb.co/k0bzDvf/Where-the-Crawdads-Sing.jpg",
         "review": "Where the Crawdads Sing is a captivating blend of mystery, romance, and coming-of-age set in the lush marshlands of North Carolina. The novel follows Kya Clark, a young girl who grows up in isolation after being abandoned by her family. As Kya navigates the complexities of nature and human relationships, she becomes embroiled in a murder investigation that threatens to unravel the secrets of her past. Delia Owens' lyrical prose and vivid descriptions of the natural world make Where the Crawdads Sing an unforgettable literary experience.",
         "totalPages": 384,
         "rating": 4.8,
@@ -45,13 +45,13 @@
             "Romance"
         ],
         "publisher": "G.P. Putnam's Sons",
-        "yearOfPublishing": 2018
+        "year_of_publishing": 2018
     },
     {
         "bookId": 4,
         "book_name": "Becoming",
         "author": "Michelle Obama",
-        "image": "becoming.jpg",
+        "image": "https://i.ibb.co/pZmyKmp/Becoming.jpg",
         "review": "Becoming is an intimate and inspiring memoir that traces Michelle Obama's journey from her childhood on the South Side of Chicago to her years as First Lady of the United States. With candor and grace, Obama reflects on her experiences as a daughter, wife, mother, and public figure, offering insights into the challenges and triumphs that have shaped her identity. From her advocacy for education and health to her role as a global ambassador for women and girls, Becoming is a testament to the power of resilience, hope, and authenticity.",
         "totalPages": 448,
         "rating": 4.9,
@@ -61,13 +61,13 @@
             "Inspiring"
         ],
         "publisher": "Crown Publishing Group",
-        "yearOfPublishing": 2018
+        "year_of_publishing": 2018
     },
     {
         "bookId": 5,
         "book_name": "The Night Circus",
         "author": "Erin Morgenstern",
-        "image": "the_night_circus.jpg",
+        "image": "https://i.ibb.co/Z2JxFm8/The-Night-Circus.jpg",
         "review": "The Night Circus is a mesmerizing tale of magic, love, and destiny set against the backdrop of a mysterious circus that appears only at night. As rival magicians Celia and Marco engage in a breathtaking duel of enchantments, they unknowingly become entwined in a love affair that spans decades. Erin Morgenstern's lush and evocative prose creates a vivid and enchanting world that draws readers into its spell. With its intricate plot and ethereal atmosphere, The Night Circus is a captivating journey into the realms of imagination.",
         "totalPages": 400,
         "rating": 4.7,
@@ -77,13 +77,13 @@
             "Romance"
         ],
         "publisher": "Doubleday",
-        "yearOfPublishing": 2011
+        "year_of_publishing": 2011
     },
     {
         "bookId": 6,
         "book_name": "The Alchemist",
         "author": "Paulo Coelho",
-        "image": "the_alchemist.jpg",
+        "image": "https://i.ibb.co/Fg7fSSp/The-Alchemist.jpg",
         "review": "The Alchemist is a timeless tale of adventure, self-discovery, and the pursuit of one's dreams. Santiago, a young shepherd boy, embarks on a journey across the desert in search of a hidden treasure. Along the way, he encounters wise mentors, encounters love, and learns valuable lessons about the importance of listening to one's heart and following one's dreams. Paulo Coelho's allegorical narrative resonates with readers of all ages, inspiring them to pursue their own personal legends and embrace the magic of life's journey.",
         "totalPages": 208,
         "rating": 4.5,
@@ -93,13 +93,13 @@
             "Philosophical"
         ],
         "publisher": "HarperCollins",
-        "yearOfPublishing": 1988
+        "year_of_publishing": 1988
     },
     {
         "bookId": 7,
         "book_name": "The Kite Runner",
         "author": "Khaled Hosseini",
-        "image": "the_kite_runner.jpg",
+        "image": "https://i.ibb.co/3fpRQzB/The-Kite-Runner.jpg",
         "review": "The Kite Runner is a powerful and emotionally resonant novel that explores themes of friendship, betrayal, and redemption against the backdrop of war-torn Afghanistan. The story follows Amir, a young boy from Kabul, and his complex relationship with his friend Hassan, the son of his father's servant. As Amir grapples with guilt and remorse over betraying Hassan, he embarks on a journey to seek redemption and atone for his past mistakes. Khaled Hosseini's haunting prose and vivid storytelling make The Kite Runner an unforgettable literary experience.",
         "totalPages": 371,
         "rating": 4.7,
@@ -109,13 +109,13 @@
             "Cultural"
         ],
         "publisher": "Riverhead Books",
-        "yearOfPublishing": 2003
+        "year_of_publishing": 2003
     },
     {
         "bookId": 8,
         "book_name": "The Road",
         "author": "Cormac McCarthy",
-        "image": "the_road.jpg",
+        "image": "https://i.ibb.co/0mQ5JSL/The-Road.jpg",
         "review": "The Road is a haunting and harrowing post-apocalyptic novel that follows a father and son as they journey across a desolate and dangerous landscape in search of safety and salvation. In a world ravaged by an unspecified cataclysm, the father and son must confront the worst of humanity while holding onto their humanity and hope. Cormac McCarthy's spare prose and stark imagery create a bleak yet mesmerizing portrait of survival and resilience in the face of overwhelming darkness.",
         "totalPages": 287,
         "rating": 4.4,
@@ -125,13 +125,13 @@
             "Survival"
         ],
         "publisher": "Alfred A. Knopf",
-        "yearOfPublishing": 2006
+        "year_of_publishing": 2006
     },
     {
         "bookId": 9,
         "book_name": "The Catcher in the Rye",
         "author": "J.D. Salinger",
-        "image": "the_catcher_in_the_rye.jpg",
+        "image": "https://i.ibb.co/QYnrztM/The-Catcher-in-the-Rye.jpg",
         "review": "The Catcher in the Rye is a timeless coming-of-age novel that follows the disillusioned teenager Holden Caulfield as he navigates the complexities of adolescence and adulthood. After being expelled from prep school, Holden embarks on a journey through New York City, grappling with themes of identity, alienation, and the phoniness of society. J.D. Salinger's iconic portrayal of youth rebellion and angst continues to resonate with readers of all generations, making The Catcher in the Rye a classic of American literature.",
         "totalPages": 277,
         "rating": 4.3,
@@ -141,6 +141,6 @@
             "American Literature"
         ],
         "publisher": "Little, Brown and Company",
-        "yearOfPublishing": 1951
+        "year_of_publishing": 1951
     }
 ]
