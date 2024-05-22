@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveReadBooks, saveWishlistBooks } from "../../utility/localStorage";
 
 const BookDetails = () => {
 
@@ -13,14 +14,27 @@ const BookDetails = () => {
 
     const { book_name, author, image, category, rating, tags, review, totalPages, publisher, year_of_publishing } = book;
 
-// Read Btn Handler
+    // Read Btn Handler
     const handleRead = () => {
 
+        saveReadBooks(idInt);
+
         toast('You Have Successfully Added The Book As Read!');
+
+        // if (!saveReadBooks(idInt)) {
+        //     saveReadBooks(idInt);
+        //     toast('You Have Successfully Added The Book As Read!');
+
+        // } else if (saveReadBooks(idInt)) {
+        //     toast('You Have Already Added The Book As Read!');
+        // }
+
     }
 
     // Wishlist Btn Handler
     const wishList = () => {
+
+        saveWishlistBooks(idInt);
 
         toast('You Have Successfully Added The Book to Wishlist!');
     }
@@ -88,7 +102,7 @@ const BookDetails = () => {
                     </button>
 
                     <button onClick={wishList}
-                    className=" bg-[#50B1C9] hover:bg-white hover:border-2 hover:border-[#50B1C9] hover:text-black px-2 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg text-white md:text-lg font-medium md:font-semibold">
+                        className=" bg-[#50B1C9] hover:bg-white hover:border-2 hover:border-[#50B1C9] hover:text-black px-2 py-1 md:px-4 md:py-2 rounded-md md:rounded-lg text-white md:text-lg font-medium md:font-semibold">
                         Wishlist
                     </button>
                 </div>
