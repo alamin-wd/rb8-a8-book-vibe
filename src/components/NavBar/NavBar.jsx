@@ -1,11 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
-
+import './NavBar.css'
+ 
 const NavBar = () => {
 
     const links = <>
-        <li className="hover:underline hover:text-[#23BE0A] px-2"><NavLink to="/">Home</NavLink></li>
-        <li className="hover:underline hover:text-[#23BE0A] px-2"><NavLink to="/listedBooks">Listed Books</NavLink></li>
-        <li className="hover:underline hover:text-[#23BE0A] px-2"><NavLink to="/pagesToRead">Pages to Read</NavLink></li>
+        <li className="hover:text-[#23BE0A]">
+            <NavLink to="/">Home</NavLink>
+        </li>
+        <li className="hover:text-[#23BE0A]">
+            <NavLink to="/listedBooks">Listed Books</NavLink>
+        </li>
+        <li className="hover:text-[#23BE0A]">
+            <NavLink to="/pagesToRead">Pages to Read</NavLink>
+        </li>
     </>
 
     return (

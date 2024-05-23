@@ -14,15 +14,15 @@ const WishlistBooks = ({ books }) => {
 
                         return (
                             <div key={book.id}
-                                className="flex flex-col md:flex-row md:justify-between items-center border md:p-10 mt-6 rounded-lg">
+                                className="flex flex-col md:flex-row md:justify-between items-center border md:px-20 md:py-6 mt-6 rounded-lg">
 
-                                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 md:gap-16">
+                                <div className="flex flex-col md:flex-row md:justify-between items-center gap-4 md:gap-10">
 
                                     <div className="w-44 bg-[#1313130D] mt-10 md:mt-0 p-6 rounded-lg">
                                         <img className="w-full" src={book.image} alt="" />
                                     </div>
 
-                                    <div>
+                                    <div className="px-10">
                                         <h2 className="text-[#131313] text-2xl md:text-4xl font-bold">{book.book_name}</h2>
 
                                         <h4 className="text-[#131313CC] font-medium my-3">By: {book.author}</h4>
@@ -68,7 +68,7 @@ const WishlistBooks = ({ books }) => {
                                             </div>
 
                                             {/* to={`/book/${bookId}`} */}
-                                            <Link>
+                                            <Link to={`/book/${book.bookId}`}>
                                                 <button className="bg-[#23BE0A] px-4 py-2 rounded-full text-white text-lg font-medium">
                                                     View Details
                                                 </button>

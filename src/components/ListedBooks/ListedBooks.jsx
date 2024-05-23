@@ -53,11 +53,11 @@ const ListedBooks = () => {
 
             {/* Read Books & Wishlist Books Tab */}
 
-            <div role="tablist" className="tabs tabs-lifted">
+            <div role="tablist" className="tabs-sm md:tabs tabs-lifted">
 
                 <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#131313CC] text-lg font-medium" aria-label="Read Books " checked />
 
-                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-xl p-6">
+                <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-xl ">
                     {
                         <ReadBooks books={readBooks}></ReadBooks>
                     }
