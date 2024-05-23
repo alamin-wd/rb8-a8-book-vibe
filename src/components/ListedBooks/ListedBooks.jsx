@@ -4,6 +4,7 @@ import { getStoredReadBooks, getStoredWishlistBooks } from "../../utility/localS
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WishlistBooks from "../WishlistBooks/WishlistBooks";
 
+
 const ListedBooks = () => {
 
     const [books, setBooks] = useState([]);
@@ -14,10 +15,11 @@ const ListedBooks = () => {
     useEffect(() => {
         fetch('/books.json')
             .then(res => res.json())
-            .then(data => { setBooks(data) });
+            .then(data => setBooks(data));
     }, []);
 
     useEffect(() => {
+        
         if (books.length > 0) {
             const storedReadBookIds = getStoredReadBooks();
             const storedWishlistBookIds = getStoredWishlistBooks();
@@ -31,9 +33,11 @@ const ListedBooks = () => {
         }
     }, [books]);
 
+
     return (
 
         <div>
+           
             <div className="bg-[#1313130D] rounded-xl py-6 md:py-10 text-center">
                 <h2 className="text-[#131313] text-2xl md:text-4xl font-bold">My Listed Books { }</h2>
             </div>
@@ -50,7 +54,7 @@ const ListedBooks = () => {
                     </ul>
                 </details>
             </div>
-
+ 
             {/* Read Books & Wishlist Books Tab */}
 
             <div role="tablist" className="tabs-sm md:tabs tabs-lifted">
@@ -60,6 +64,7 @@ const ListedBooks = () => {
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-xl ">
                     {
                         <ReadBooks books={readBooks}></ReadBooks>
+
                     }
                 </div>
 

@@ -4,6 +4,7 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { MdOutlineContactPage } from "react-icons/md";
 import PropTypes from 'prop-types';
 
+
 const ReadBooks = ({ books }) => {
 
     return (
@@ -96,11 +97,4 @@ ReadBooks.propTypes = {
 
 export default ReadBooks;
 
-
-{/* <div
-    className="flex flex-col md:flex-row md:justify-between items-center border md:p-10 mt-6 rounded-lg">
-
-    
-
- </div> */}
 

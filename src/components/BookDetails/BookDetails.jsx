@@ -25,7 +25,7 @@ const BookDetails = () => {
         //     saveReadBooks(idInt);
         //     toast('You Have Successfully Added The Book As Read!');
 
-        // } else if (saveReadBooks(idInt)) {
+        // } else {
         //     toast('You Have Already Added The Book As Read!');
         // }
 
@@ -34,9 +34,10 @@ const BookDetails = () => {
     // Wishlist Btn Handler
     const wishList = () => {
 
-        saveWishlistBooks(idInt);
+            saveWishlistBooks(idInt);
 
-        toast('You Have Successfully Added The Book to Wishlist!');
+            toast('You Have Successfully Added The Book to Wishlist!');
+        
     }
 
 

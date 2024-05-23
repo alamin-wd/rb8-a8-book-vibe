@@ -1,5 +1,6 @@
 import { FaRegStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 const Book = ({ book }) => {
 
@@ -41,6 +42,10 @@ const Book = ({ book }) => {
             </div>
         </Link>
     );
+};
+
+Book.propTypes = {
+    book: PropTypes.array.isRequired
 };
 
 export default Book;
