@@ -51,12 +51,19 @@ const BookDetails = () => {
 
             {/* Right Side */}
             <div className="md:w-3/5">
+
                 <h2 className="text-[#131313] text-2xl md:text-4xl font-bold">{book_name}</h2>
+
                 <h4 className="text-[#131313CC] font-medium my-4">By: {author}</h4>
+
                 <hr />
+
                 <h3 className="text-[#131313CC] my-2 font-medium">{category}</h3>
+
                 <hr />
+
                 <p className="my-4"><span className="text-[#131313] font-bold">Review:</span> {review}</p>
+
                 <div className="flex items-center justify-center md:justify-start gap-4 my-4">
                     <span className="text-[#131313] font-bold">Tags:</span>
 
@@ -64,7 +71,9 @@ const BookDetails = () => {
 
                     <span className="bg-[#23BE0A0D] text-[#23BE0A] font-medium px-3 py-1 rounded-full">{tags[1]}</span>
                 </div>
+
                 <hr />
+
                 <div className="md:w-1/2">
                     <table className="table-md">
                         <tbody>

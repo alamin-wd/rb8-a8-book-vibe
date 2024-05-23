@@ -12,6 +12,7 @@ import ListedBooks from './components/ListedBooks/ListedBooks';
 import PagesToRead from './components/PagesToRead/PagesToRead';
 import BookDetails from './components/BookDetails/BookDetails';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -38,7 +39,6 @@ const router = createBrowserRouter([
         element: <BookDetails></BookDetails>,
         loader: () => fetch('../books.json'),
       },
-
     ]
 
   },
