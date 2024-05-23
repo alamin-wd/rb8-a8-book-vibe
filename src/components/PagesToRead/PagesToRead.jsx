@@ -1,24 +1,13 @@
 
-// import { useEffect } from 'react';
-// import { useLoaderData } from 'react-router-dom';
-
 import { useEffect, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { getStoredReadBooks } from '../../utility/localStorage';
-// import { getStoredReadBooks } from '../../utility/localStorage';
 
-
-const data = [
-    { name: 'January', pages: 65 },
-    { name: 'February', pages: 59 },
-    { name: 'March', pages: 80 },
-    { name: 'April', pages: 81 },
-    { name: 'May', pages: 56 },
-];
 
 const PagesToRead = () => {
     const [books, setBooks] = useState([]);
     const [readLists, setReadLists] = useState([]);
+    const [chartData, setChartData] = useState([]);
 
     useEffect(() => {
         fetch('/books.json')
@@ -33,29 +22,37 @@ const PagesToRead = () => {
             const readLists = books.filter(book => storedReadListIds.includes(book.bookId));
 
             setReadLists(readLists);
-
         }
     }, [books]);
+
+    useEffect(() => {
+        if (readLists.length > 0) {
+
+            const chartData = readLists.map(book => ({
+
+                name: book.book_name,
+                pages: book.totalPages,
+            }));
+
+            setChartData(chartData);
+        }
+
+    }, [readLists]);
 
     return (
 
         <div className='w-9/12 mx-auto'>
 
-            {
-                readLists.map(readList => <div key={readList.id}>
-                </div>)
-            }
+            <ResponsiveContainer width="100%" height={500}>
 
-            <ResponsiveContainer width="100%" height={600}>
-
-                <BarChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <BarChart data={chartData} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
 
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="" />
+                    <XAxis dataKey="name" fill='#59C6D2' />
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Bar dataKey="pages" fill="#8884d8" />
+                    <Bar dataKey="pages" fill="#23BE0A" />
 
                 </BarChart>
 
