@@ -1,5 +1,4 @@
 // Read Btn
-
 // Get Stored Read Books
 
 const getStoredReadBooks = () => {
@@ -20,10 +19,20 @@ const saveReadBooks = id => {
     if (!exists) {
         storedReadBooks.push(id);
         localStorage.setItem('read-books', JSON.stringify(storedReadBooks));
+
+        return true;
+    }
+    else {
+        return false;
     }
 }
+// Check if a book is in the Read list
+const isReadBook = id => {
+    const storedReadBooks = getStoredReadBooks();
+    return storedReadBooks.includes(id);
+}
 
-export { getStoredReadBooks, saveReadBooks };
+export { getStoredReadBooks, saveReadBooks, isReadBook };
 
 // Wishlist Btn
 // Get Wishlist Books
@@ -47,7 +56,19 @@ const saveWishlistBooks = id => {
     if (!exists) {
         storedWishlistBooks.push(id);
         localStorage.setItem('wishlist-books', JSON.stringify(storedWishlistBooks));
+
+        return true;
+    }
+    else{
+        return false;
     }
 }
 
-export { getStoredWishlistBooks, saveWishlistBooks };
+// Check if a book is in the Wishlist list
+const isWishlistBook = id =>{
+    const storedWishlistBooks = getStoredWishlistBooks();
+
+    return storedWishlistBooks.includes(id);
+}
+
+export { getStoredWishlistBooks, saveWishlistBooks, isWishlistBook };

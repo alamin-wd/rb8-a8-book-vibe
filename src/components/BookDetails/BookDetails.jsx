@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveReadBooks, saveWishlistBooks } from "../../utility/localStorage";
+import { isReadBook, saveReadBooks, saveWishlistBooks } from "../../utility/localStorage";
 
 const BookDetails = () => {
 
@@ -17,27 +17,27 @@ const BookDetails = () => {
     // Read Btn Handler
     const handleRead = () => {
 
-        saveReadBooks(idInt);
-
-        toast('You Have Successfully Added The Book As Read!');
-
-        // if (!saveReadBooks(idInt)) {
-        //     saveReadBooks(idInt);
-        //     toast('You Have Successfully Added The Book As Read!');
-
-        // } else {
-        //     toast('You Have Already Added The Book As Read!');
-        // }
+        if (saveReadBooks(idInt)) {
+            toast("You Have Successfully Added The Book As Read!");
+        }
+        else {
+            toast('Error: You Have Already Added The Book As Read!');
+        }
 
     }
 
     // Wishlist Btn Handler
     const wishList = () => {
 
-            saveWishlistBooks(idInt);
-
+        if(isReadBook(idInt)) {
+            toast('Error: This book is in your Read list. Remove it from Read list to add to Wishlist.');
+        }
+        else if(saveWishlistBooks(idInt)){
             toast('You Have Successfully Added The Book to Wishlist!');
-        
+        }
+        else{
+            toast('Error: You Have Already Added The Book to Wishlist!');
+        }
     }
 
 

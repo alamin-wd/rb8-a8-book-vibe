@@ -1,4 +1,4 @@
-import { FaChevronDown } from "react-icons/fa6";
+
 import { useEffect, useState } from "react";
 import { getStoredReadBooks, getStoredWishlistBooks } from "../../utility/localStorage";
 import ReadBooks from "../ReadBooks/ReadBooks";
@@ -8,8 +8,28 @@ import WishlistBooks from "../WishlistBooks/WishlistBooks";
 const ListedBooks = () => {
 
     const [books, setBooks] = useState([]);
+
     const [readBooks, setReadBooks] = useState([]);
+
     const [wishlistBooks, setWishlistBooks] = useState([]);
+
+    // const handleFilterBooks = filter => {
+
+    //     if(filter === 'all'){
+    //         setDisplayJobs(appliedJobs);
+    //     }
+    //     else if(filter === 'remote'){
+    //         const remoteJobs = appliedJobs.filter(appliedJob => appliedJob.remote_or_onsite === 'Remote');
+
+    //         setDisplayJobs(remoteJobs);
+    //     }
+    //     else if(filter === 'onsite'){
+    //         const onsiteJobs = appliedJobs.filter(appliedJob => appliedJob.remote_or_onsite === 'Onsite');
+
+    //         setDisplayJobs(onsiteJobs);
+    //     }
+
+    // }
 
 
     useEffect(() => {
@@ -19,7 +39,7 @@ const ListedBooks = () => {
     }, []);
 
     useEffect(() => {
-        
+
         if (books.length > 0) {
             const storedReadBookIds = getStoredReadBooks();
             const storedWishlistBookIds = getStoredWishlistBooks();
@@ -30,31 +50,15 @@ const ListedBooks = () => {
 
             setReadBooks(readBooks);
             setWishlistBooks(wishlistBooks);
+          
         }
-    }, [books]);
 
+    }, [books]);
 
     return (
 
         <div>
-           
-            <div className="bg-[#1313130D] rounded-xl py-6 md:py-10 text-center">
-                <h2 className="text-[#131313] text-2xl md:text-4xl font-bold">My Listed Books { }</h2>
-            </div>
 
-            <div className="my-6 text-center">
-                <details className="dropdown ">
-                    <summary className="m-1 btn bg-[#23BE0A] hover:bg-[#59C6D2] text-white">Sort By <FaChevronDown /></summary>
-                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-lg w-40">
-                        <li><a>All</a></li>
-                        <li><a>Rating</a></li>
-                        <li><a>Number of Pages</a></li>
-                        <li><a>Published year</a></li>
-                        {/* <li onClick={() => handleFilterJobs('onsite')}><a>Onsite</a></li> */}
-                    </ul>
-                </details>
-            </div>
- 
             {/* Read Books & Wishlist Books Tab */}
 
             <div role="tablist" className="tabs-sm md:tabs tabs-lifted">
