@@ -3,31 +3,11 @@ import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { MdOutlineContactPage } from "react-icons/md";
 import PropTypes from 'prop-types';
-import { FaChevronDown } from "react-icons/fa6";
 
 
 const ReadBooks = ({ books }) => {
 
     return (
-        <div>
-
-<div className="bg-[#1313130D] rounded-xl py-6 md:py-10 text-center">
-                <h2 className="text-[#131313] text-2xl md:text-4xl font-bold">My Listed Books { }</h2>
-            </div>
-
-            <div className="my-6 text-center">
-                <details className="dropdown ">
-                    <summary className="m-1 btn bg-[#23BE0A] hover:bg-[#59C6D2] text-white">Sort By <FaChevronDown /></summary>
-                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-lg w-40">
-                        <li><a>All</a></li>
-                        <li><a>Rating</a></li>
-                        <li><a>Number of Pages</a></li>
-                        <li><a>Published year</a></li>
-                        {/* <li onClick={() => handleFilterJobs('onsite')}><a>Onsite</a></li> */}
-                    </ul>
-                </details>
-            </div>
-
             <div>
 
 
@@ -110,7 +90,6 @@ const ReadBooks = ({ books }) => {
                     )
                 }
             </div>
-        </div>
     );
 };
 

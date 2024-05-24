@@ -3,34 +3,15 @@ import { useEffect, useState } from "react";
 import { getStoredReadBooks, getStoredWishlistBooks } from "../../utility/localStorage";
 import ReadBooks from "../ReadBooks/ReadBooks";
 import WishlistBooks from "../WishlistBooks/WishlistBooks";
+import { FaChevronDown } from "react-icons/fa6";
+
 
 
 const ListedBooks = () => {
 
     const [books, setBooks] = useState([]);
-
     const [readBooks, setReadBooks] = useState([]);
-
     const [wishlistBooks, setWishlistBooks] = useState([]);
-
-    // const handleFilterBooks = filter => {
-
-    //     if(filter === 'all'){
-    //         setDisplayJobs(appliedJobs);
-    //     }
-    //     else if(filter === 'remote'){
-    //         const remoteJobs = appliedJobs.filter(appliedJob => appliedJob.remote_or_onsite === 'Remote');
-
-    //         setDisplayJobs(remoteJobs);
-    //     }
-    //     else if(filter === 'onsite'){
-    //         const onsiteJobs = appliedJobs.filter(appliedJob => appliedJob.remote_or_onsite === 'Onsite');
-
-    //         setDisplayJobs(onsiteJobs);
-    //     }
-
-    // }
-
 
     useEffect(() => {
         fetch('/books.json')
@@ -50,7 +31,7 @@ const ListedBooks = () => {
 
             setReadBooks(readBooks);
             setWishlistBooks(wishlistBooks);
-          
+
         }
 
     }, [books]);
@@ -58,6 +39,29 @@ const ListedBooks = () => {
     return (
 
         <div>
+            <div>
+
+                <div className="bg-[#1313130D] rounded-xl py-6 md:py-10 text-center">
+                    <h2 className="text-[#131313] text-2xl md:text-4xl font-bold">My Listed Books { }</h2>
+                </div>
+
+                <div className="my-6 text-center">
+                    <details className="dropdown ">
+
+                        <summary className="m-1 btn bg-[#23BE0A] hover:bg-[#59C6D2] text-white">Sort By <FaChevronDown /></summary>
+
+                        <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-lg w-40">
+
+                            <li><a>All</a></li>
+                            <li><a>Rating</a></li>
+                            <li><a>Number of Pages</a></li>
+                            <li><a>Published year</a></li>
+
+                        </ul>
+                    </details>
+                </div>
+
+            </div>
 
             {/* Read Books & Wishlist Books Tab */}
 
@@ -66,10 +70,13 @@ const ListedBooks = () => {
                 <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#131313CC] text-lg font-medium" aria-label="Read Books " checked />
 
                 <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-xl ">
-                    {
-                        <ReadBooks books={readBooks}></ReadBooks>
 
-                    }
+                    <div>
+                        {
+                            <ReadBooks books={readBooks}></ReadBooks>
+
+                        }
+                    </div>
                 </div>
 
                 <input type="radio" name="my_tabs_2" role="tab" className="tab text-[#131313CC] text-lg font-medium" aria-label="Wishlist Books" />
